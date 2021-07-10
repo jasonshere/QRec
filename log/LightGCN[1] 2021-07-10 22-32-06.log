@@ -1,0 +1,12 @@
+2021-07-10 22:32:06,370 - LightGCN - INFO - ### model configuration ###
+2021-07-10 22:32:06,370 - LightGCN - INFO - ratings=/home/sh3/S3620273/workstation/recommender_datasets/datasets/ML1M/train_df_1.csv
+2021-07-10 22:32:06,370 - LightGCN - INFO - recommender=LightGCN
+2021-07-10 22:32:06,370 - LightGCN - INFO - num.factors=50
+2021-07-10 22:32:06,370 - LightGCN - INFO - batch_size=32
+2021-07-10 22:32:06,371 - LightGCN - INFO - reg.lambda=-u 0.001 -i 0.001 -b 0.2 -s 0.2
+2021-07-10 22:32:06,371 - LightGCN - INFO - item.ranking=on -topN 5,10
+2021-07-10 22:32:06,371 - LightGCN - INFO - output.setup=on -dir ../results/
+2021-07-10 22:32:06,371 - LightGCN - INFO - learnRate=-init 0.002 -max 1
+2021-07-10 22:32:06,371 - LightGCN - INFO - ratings.setup=-columns 0 1 2 -header
+2021-07-10 22:32:06,371 - LightGCN - INFO - num.max.iter=120
+2021-07-10 22:32:06,371 - LightGCN - INFO - evaluation.setup=-b 1 -testSet /home/sh3/S3620273/workstation/recommender_datasets/datasets/ML1M/test_df_1.csv

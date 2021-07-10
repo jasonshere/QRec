@@ -1,0 +1,12 @@
+2021-07-10 23:26:09,790 - IRGAN - INFO - ### model configuration ###
+2021-07-10 23:26:09,790 - IRGAN - INFO - ratings=/home/sh3/S3620273/workstation/recommender_datasets/datasets/ML1M/train_df_1.csv
+2021-07-10 23:26:09,790 - IRGAN - INFO - recommender=IRGAN
+2021-07-10 23:26:09,790 - IRGAN - INFO - num.factors=50
+2021-07-10 23:26:09,790 - IRGAN - INFO - batch_size=128
+2021-07-10 23:26:09,790 - IRGAN - INFO - reg.lambda=-u 0.001 -i 0.01 -b 0.2 -s 0.2
+2021-07-10 23:26:09,790 - IRGAN - INFO - item.ranking=on -topN 10
+2021-07-10 23:26:09,790 - IRGAN - INFO - output.setup=on -dir ../results/
+2021-07-10 23:26:09,790 - IRGAN - INFO - learnRate=-init 0.001 -max 1
+2021-07-10 23:26:09,790 - IRGAN - INFO - ratings.setup=-columns 0 1 2 -header
+2021-07-10 23:26:09,790 - IRGAN - INFO - num.max.iter=30
+2021-07-10 23:26:09,790 - IRGAN - INFO - evaluation.setup=-b 1 -testSet /home/sh3/S3620273/workstation/recommender_datasets/datasets/ML1M/test_df_1.csv
