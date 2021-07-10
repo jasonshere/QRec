@@ -1,5 +1,5 @@
 2021-07-10 22:33:57,319 - LightGCN - INFO - ### model configuration ###
-2021-07-10 22:33:57,320 - LightGCN - INFO - ratings=/home/sh3/S3620273/workstation/recommender_datasets/datasets/ML1M/train_df_1.csv
+2021-07-10 22:33:57,320 - LightGCN - INFO - ratings=../../recommender_datasets/datasets/ML1M/train_df_1.csv
 2021-07-10 22:33:57,320 - LightGCN - INFO - recommender=LightGCN
 2021-07-10 22:33:57,320 - LightGCN - INFO - num.factors=50
 2021-07-10 22:33:57,320 - LightGCN - INFO - batch_size=3000
@@ -9,4 +9,4 @@
 2021-07-10 22:33:57,320 - LightGCN - INFO - learnRate=-init 0.002 -max 1
 2021-07-10 22:33:57,320 - LightGCN - INFO - ratings.setup=-columns 0 1 2 -header
 2021-07-10 22:33:57,320 - LightGCN - INFO - num.max.iter=120
-2021-07-10 22:33:57,320 - LightGCN - INFO - evaluation.setup=-b 1 -testSet /home/sh3/S3620273/workstation/recommender_datasets/datasets/ML1M/test_df_1.csv
+2021-07-10 22:33:57,320 - LightGCN - INFO - evaluation.setup=-b 1 -testSet ../../recommender_datasets/datasets/ML1M/test_df_1.csv

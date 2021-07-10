@@ -160,4 +160,8 @@ class APR(DeepRecommender):
         else:
             return [self.data.globalMean] * self.num_items
 
+    def execute(self):
+        super(APR, self).execute()
+        print(self.Q.dot(self.P.T))
+
 

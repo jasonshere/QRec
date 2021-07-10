@@ -1,5 +1,5 @@
 2021-07-10 23:25:01,455 - SGL - INFO - ### model configuration ###
-2021-07-10 23:25:01,455 - SGL - INFO - ratings=/home/sh3/S3620273/workstation/recommender_datasets/datasets/ML1M/train_df_1.csv
+2021-07-10 23:25:01,455 - SGL - INFO - ratings=../../recommender_datasets/datasets/ML1M/train_df_1.csv
 2021-07-10 23:25:01,455 - SGL - INFO - recommender=SGL
 2021-07-10 23:25:01,455 - SGL - INFO - num.factors=50
 2021-07-10 23:25:01,455 - SGL - INFO - batch_size=2000
@@ -9,5 +9,5 @@
 2021-07-10 23:25:01,456 - SGL - INFO - learnRate=-init 0.001 -max 1
 2021-07-10 23:25:01,456 - SGL - INFO - ratings.setup=-columns 0 1 2 -header
 2021-07-10 23:25:01,456 - SGL - INFO - num.max.iter=120
-2021-07-10 23:25:01,456 - SGL - INFO - evaluation.setup=-b 1 -testSet /home/sh3/S3620273/workstation/recommender_datasets/datasets/ML1M/test_df_1.csv
+2021-07-10 23:25:01,456 - SGL - INFO - evaluation.setup=-b 1 -testSet ../../recommender_datasets/datasets/ML1M/test_df_1.csv
 2021-07-10 23:25:01,456 - SGL - INFO - SGL=-lambda 0.1 -droprate 0.1 -augtype 1 -temp 0.2
