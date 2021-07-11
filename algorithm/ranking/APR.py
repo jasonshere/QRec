@@ -30,7 +30,6 @@ class APR(DeepRecommender):
         self.regAdv = float(args['-regA'])
         self.advEpoch = int(args['-advEpoch'])
 
-
     def _create_variables(self):
         #perturbation vectors
         self.adv_U = tf.Variable(tf.zeros(shape=[self.num_users, self.embed_size]),dtype=tf.float32, trainable=False)
@@ -162,6 +161,6 @@ class APR(DeepRecommender):
 
     def execute(self):
         super(APR, self).execute()
-        print(self.Q.dot(self.P.T))
+        self.finalPredictions = self.Q.dot(self.P.T)
 
 

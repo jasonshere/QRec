@@ -53,6 +53,8 @@ class Recommender(object):
     def readConfiguration(self):
         self.algorName = self.config['recommender']
         self.output = LineConfig(self.config['output.setup'])
+        self.save_predictions = LineConfig(self.config['save_predictions'])
+        self.isSavePridictions = self.save_predictions.isMainOn()
         self.isOutput = self.output.isMainOn()
         self.ranking = LineConfig(self.config['item.ranking'])
 
@@ -253,6 +255,9 @@ class Recommender(object):
             self.evalRanking()
         else:
             self.evalRatings()
+
+        if self.isSavePridictions:
+            print(self.finalPredictions)
 
         #save model
         if self.isSaveModel:
