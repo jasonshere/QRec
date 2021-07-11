@@ -2,6 +2,8 @@
 from baseclass.DeepRecommender import DeepRecommender
 
 import numpy as np
+import pandas as pd
+import os
 import random
 from tool import config
 
@@ -161,6 +163,15 @@ class APR(DeepRecommender):
 
     def execute(self):
         super(APR, self).execute()
-        self.finalPredictions = self.Q.dot(self.P.T)
+        
+        if self.isSavePridictions:
+            self.finalPredictions = self.Q.dot(self.P.T)
+            pdr = self.save_predictions['-dir']
+            try:
+                os.makedirs(pdr)
+            except:
+                pass
+            print "Saving predictions..."
+            pd.DataFrame(self.finalPredictions).to_csv("{}/predictions.csv" .format(pdr), index=False)
 
 

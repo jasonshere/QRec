@@ -256,9 +256,6 @@ class Recommender(object):
         else:
             self.evalRatings()
 
-        if self.isSavePridictions:
-            print(self.finalPredictions)
-
         #save model
         if self.isSaveModel:
             print 'Saving model %s...' %self.foldInfo
