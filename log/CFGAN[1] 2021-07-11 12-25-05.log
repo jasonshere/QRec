@@ -1,0 +1,13 @@
+2021-07-11 12:25:05,996 - CFGAN - INFO - ### model configuration ###
+2021-07-11 12:25:05,996 - CFGAN - INFO - ratings=../../recommender_datasets/datasets/ML1M/train_df_1.csv
+2021-07-11 12:25:05,996 - CFGAN - INFO - recommender=CFGAN
+2021-07-11 12:25:05,996 - CFGAN - INFO - num.factors=20
+2021-07-11 12:25:05,997 - CFGAN - INFO - batch_size=128
+2021-07-11 12:25:05,997 - CFGAN - INFO - reg.lambda=-u 0.001 -i 0.01 -b 0.2 -s 0.2
+2021-07-11 12:25:05,997 - CFGAN - INFO - item.ranking=on -topN 10
+2021-07-11 12:25:05,997 - CFGAN - INFO - output.setup=on -dir ../results/
+2021-07-11 12:25:05,997 - CFGAN - INFO - learnRate=-init 0.002 -max 1
+2021-07-11 12:25:05,997 - CFGAN - INFO - ratings.setup=-columns 0 1 2 -header
+2021-07-11 12:25:05,997 - CFGAN - INFO - save_predictions=on -dir ../../recommender_datasets/model_predictions/TTT/ML1M/fold-1/
+2021-07-11 12:25:05,997 - CFGAN - INFO - num.max.iter=100
+2021-07-11 12:25:05,997 - CFGAN - INFO - evaluation.setup=-b 1 -testSet ../../recommender_datasets/datasets/ML1M/test_df_1.csv

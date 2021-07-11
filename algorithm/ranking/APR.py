@@ -6,6 +6,9 @@ import pandas as pd
 import os
 import random
 from tool import config
+from shutil import copyfile
+from os.path import abspath
+from tool.config import LineConfig
 
 try:
     import tensorflow as tf
@@ -173,5 +176,10 @@ class APR(DeepRecommender):
                 pass
             print "Saving predictions..."
             pd.DataFrame(self.finalPredictions).to_csv("{}/predictions.csv" .format(pdr), index=False)
+
+            test_file = abspath(LineConfig(self.config['evaluation.setup']).getOption('-testSet'))
+            train_file = abspath(self.config['ratings'])
+            copyfile(train_file, "{}/train.csv" .format(pdr))
+            copyfile(test_file, "{}/test.csv" .format(pdr))
 
 

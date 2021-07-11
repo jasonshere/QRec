@@ -26,7 +26,7 @@ class QRec(object):
                 #specified testSet
                 self.trainingData = FileIO.loadDataSet(config, config['ratings'],binarized=binarized,threshold=bottom)
                 self.testData = FileIO.loadDataSet(config, self.evaluation['-testSet'], bTest=True,binarized=binarized,threshold=bottom)
-
+                # print(len(self.testData))
             elif self.evaluation.contains('-ap'):
                 #random auto partition
                 self.trainingData = FileIO.loadDataSet(config,config['ratings'],binarized=binarized,threshold=bottom)

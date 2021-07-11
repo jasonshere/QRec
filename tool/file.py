@@ -74,7 +74,10 @@ class FileIO(object):
                         testData.append([userId, itemId, float(rating)])
                     else:
                         continue
-                testData.append([userId, itemId, float(rating)])
+                else:
+                    testData.append([userId, itemId, float(rating)])
+
+        # print(len(testData))
         if not bTest:
             return trainingData
         else:

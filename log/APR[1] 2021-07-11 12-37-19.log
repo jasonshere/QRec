@@ -1,0 +1,16 @@
+2021-07-11 12:37:19,641 - APR - INFO - ### model configuration ###
+2021-07-11 12:37:19,642 - APR - INFO - ratings=../../recommender_datasets/datasets/ML1M/train_df_1.csv
+2021-07-11 12:37:19,642 - APR - INFO - recommender=APR
+2021-07-11 12:37:19,642 - APR - INFO - num.factors=64
+2021-07-11 12:37:19,642 - APR - INFO - APR=-regA 0.02 -eps 2 -advEpoch 5000
+2021-07-11 12:37:19,642 - APR - INFO - batch_size=512
+2021-07-11 12:37:19,642 - APR - INFO - reg.lambda=-u 0.002 -i 0.01 -b 0.2 -s 0.2
+2021-07-11 12:37:19,642 - APR - INFO - item.ranking=on -topN 5,10
+2021-07-11 12:37:19,642 - APR - INFO - output.setup=off -dir ../results/
+2021-07-11 12:37:19,642 - APR - INFO - learnRate=-init 0.005 -max 1
+2021-07-11 12:37:19,642 - APR - INFO - ratings.setup=-columns 0 1 2 -header
+2021-07-11 12:37:19,642 - APR - INFO - save_predictions=on -dir ../../recommender_datasets/model_predictions/APR/ML1M/fold-1/
+2021-07-11 12:37:19,642 - APR - INFO - num.max.iter=5000
+2021-07-11 12:37:19,643 - APR - INFO - evaluation.setup=-b 1 -testSet ../../recommender_datasets/datasets/ML1M/test_df_1.csv
+2021-07-11 12:39:20,693 - APR - INFO - ###Evaluation Results###
+2021-07-11 12:39:20,694 - APR - INFO - ['Top 5\n', 'Precision:0.328846153846\n', 'Recall:0.0709831825693\n', 'F1:0.116762550667\n', 'MAP:0.256270308355\n', 'NDCG:0.347403936603\n', 'Top 10\n', 'Precision:0.287533156499\n', 'Recall:0.119313625398\n', 'F1:0.168646403759\n', 'MAP:0.204506774997\n', 'NDCG:0.321949944899\n']
